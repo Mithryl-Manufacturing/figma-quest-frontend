@@ -3,13 +3,16 @@ import { Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from 'src/QuestUiKitLightTheme';
+import MacBookPro161 from 'src/components/MacBookPro161/MacBookPro161';
 
 function App() {
   return (
     <HelmetProvider>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={questTheme}>
-          <Routes></Routes>
+          <Routes>
+            <Route path="MacBookPro161" element={<MacBookPro161 />} />
+          </Routes>
         </ThemeProvider>
       </StyledEngineProvider>
     </HelmetProvider>

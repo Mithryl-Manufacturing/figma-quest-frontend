@@ -13,13 +13,13 @@
  **********************************************************************/
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { styled } from '@mui/material/styles';
 import Authentication1 from 'src/components/Authentication1/Authentication1';
-import SideBarLogin from 'src/components/SideBarLogin/SideBarLogin';
 import { MacBookPro161Props } from 'src/types';
 
 const MacBookPro1611: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
+  backgroundColor: `rgba(35, 47, 64, 1)`,
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -34,27 +34,19 @@ const MacBookPro1611: any = styled('div')({
   overflow: `hidden`,
 });
 
-const Authentication11: any = styled(Authentication1)(({ theme }: any) => ({
-  width: `530px`,
-  height: `840px`,
+const Authentication12: any = styled(Authentication1)(({ theme }: any) => ({
   position: `absolute`,
   left: `695px`,
-  top: `120px`,
-}));
-
-const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
-  width: `125px`,
-  height: `1080px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
+  top: `176px`,
 }));
 
 function MacBookPro161(props: MacBookPro161Props): JSX.Element {
   return (
     <MacBookPro1611 className={props.className}>
-      <Authentication11 />
-      <SideBarLogin1 />
+      <Helmet>
+        <title>MacBookPro161</title>
+      </Helmet>
+      <Authentication12 />
     </MacBookPro1611>
   );
 }

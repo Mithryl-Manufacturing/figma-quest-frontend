@@ -17,6 +17,10 @@ export interface MacBookPro161Props {
   className?: any;
 }
 
+export interface Authentication1Props {
+  className?: any;
+}
+
 export interface LoginProps {
   className?: any;
 }
