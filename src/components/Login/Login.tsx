@@ -15,7 +15,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import SideBarLogin from 'src/components/SideBarLogin/SideBarLogin';
-import Authentication1 from 'src/components/Authentication1/Authentication1';
 import { LoginProps } from 'src/types';
 
 const Login1: any = styled('div')({
@@ -42,19 +41,10 @@ const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
   top: `0px`,
 }));
 
-const Authentication11: any = styled(Authentication1)(({ theme }: any) => ({
-  width: `622px`,
-  height: `733px`,
-  position: `absolute`,
-  left: `428px`,
-  top: `193px`,
-}));
-
 function Login(props: LoginProps): JSX.Element {
   return (
     <Login1 className={props.className}>
       <SideBarLogin1 />
-      <Authentication11 />
     </Login1>
   );
 }

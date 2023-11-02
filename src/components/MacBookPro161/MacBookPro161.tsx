@@ -15,7 +15,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { styled } from '@mui/material/styles';
-import Authentication1 from 'src/components/Authentication1/Authentication1';
 import { MacBookPro161Props } from 'src/types';
 
 const MacBookPro1611: any = styled('div')({
@@ -34,19 +33,12 @@ const MacBookPro1611: any = styled('div')({
   overflow: `hidden`,
 });
 
-const Authentication12: any = styled(Authentication1)(({ theme }: any) => ({
-  position: `absolute`,
-  left: `695px`,
-  top: `176px`,
-}));
-
 function MacBookPro161(props: MacBookPro161Props): JSX.Element {
   return (
     <MacBookPro1611 className={props.className}>
       <Helmet>
         <title>MacBookPro161</title>
       </Helmet>
-      <Authentication12 />
     </MacBookPro1611>
   );
 }

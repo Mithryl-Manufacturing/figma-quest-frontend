@@ -23,7 +23,6 @@ import MillingMachine16Image from 'src/assets/images/Dashboard_milling_machine_1
 import MillingMachine17Image from 'src/assets/images/Dashboard_milling_machine_1_7.png';
 import MillingMachine18Image from 'src/assets/images/Dashboard_milling_machine_1_8.png';
 import { styled } from '@mui/material/styles';
-import CheckBox2 from 'src/components/CheckBox2/CheckBox2';
 import { DashboardProps } from 'src/types';
 
 const Dashboard1: any = styled('div')({
@@ -76,12 +75,6 @@ const Frame3: any = styled('div')({
   top: `0px`,
   overflow: `hidden`,
 });
-
-const CheckBox21: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
 
 const MillingMachine1: any = styled('img')({
   height: `50px`,
@@ -200,12 +193,6 @@ const Frame31: any = styled('div')({
   overflow: `hidden`,
 });
 
-const CheckBox22: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
-
 const MillingMachine11: any = styled('img')({
   height: `50px`,
   width: `50px`,
@@ -322,12 +309,6 @@ const Frame32: any = styled('div')({
   top: `260px`,
   overflow: `hidden`,
 });
-
-const CheckBox23: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
 
 const MillingMachine12: any = styled('img')({
   height: `50px`,
@@ -446,12 +427,6 @@ const Frame33: any = styled('div')({
   overflow: `hidden`,
 });
 
-const CheckBox24: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
-
 const MillingMachine13: any = styled('img')({
   height: `50px`,
   width: `50px`,
@@ -568,12 +543,6 @@ const Frame34: any = styled('div')({
   top: `520px`,
   overflow: `hidden`,
 });
-
-const CheckBox25: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
 
 const MillingMachine14: any = styled('img')({
   height: `50px`,
@@ -692,12 +661,6 @@ const Frame35: any = styled('div')({
   overflow: `hidden`,
 });
 
-const CheckBox26: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
-
 const MillingMachine15: any = styled('img')({
   height: `50px`,
   width: `50px`,
@@ -814,12 +777,6 @@ const Frame36: any = styled('div')({
   top: `780px`,
   overflow: `hidden`,
 });
-
-const CheckBox27: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
 
 const MillingMachine16: any = styled('img')({
   height: `50px`,
@@ -938,12 +895,6 @@ const Frame37: any = styled('div')({
   overflow: `hidden`,
 });
 
-const CheckBox28: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
-
 const MillingMachine17: any = styled('img')({
   height: `50px`,
   width: `50px`,
@@ -1061,12 +1012,6 @@ const Frame38: any = styled('div')({
   overflow: `hidden`,
 });
 
-const CheckBox29: any = styled(CheckBox2)(({ theme }: any) => ({
-  width: `50px`,
-  height: `50px`,
-  margin: `0px`,
-}));
-
 const MillingMachine18: any = styled('img')({
   height: `50px`,
   width: `50px`,
@@ -1171,7 +1116,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
     <Dashboard1 className={props.className}>
       <MachineData>
         <Frame3>
-          <CheckBox21 />
           <MillingMachine1
             src={MillingMachine1Image}
             loading="lazy"
@@ -1186,7 +1130,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated>{`Automated`}</Automated>
         </Frame3>
         <Frame31>
-          <CheckBox22 />
           <MillingMachine11
             src={MillingMachine11Image}
             loading="lazy"
@@ -1201,7 +1144,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated1>{`Automated`}</Automated1>
         </Frame31>
         <Frame32>
-          <CheckBox23 />
           <MillingMachine12
             src={MillingMachine12Image}
             loading="lazy"
@@ -1216,7 +1158,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated2>{`Automated`}</Automated2>
         </Frame32>
         <Frame33>
-          <CheckBox24 />
           <MillingMachine13
             src={MillingMachine13Image}
             loading="lazy"
@@ -1231,7 +1172,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated3>{`Automated`}</Automated3>
         </Frame33>
         <Frame34>
-          <CheckBox25 />
           <MillingMachine14
             src={MillingMachine14Image}
             loading="lazy"
@@ -1246,7 +1186,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated4>{`Automated`}</Automated4>
         </Frame34>
         <Frame35>
-          <CheckBox26 />
           <MillingMachine15
             src={MillingMachine15Image}
             loading="lazy"
@@ -1261,7 +1200,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated5>{`Automated`}</Automated5>
         </Frame35>
         <Frame36>
-          <CheckBox27 />
           <MillingMachine16
             src={MillingMachine16Image}
             loading="lazy"
@@ -1276,7 +1214,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated6>{`Automated`}</Automated6>
         </Frame36>
         <Frame37>
-          <CheckBox28 />
           <MillingMachine17
             src={MillingMachine17Image}
             loading="lazy"
@@ -1291,7 +1228,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           <Automated7>{`Automated`}</Automated7>
         </Frame37>
         <Frame38>
-          <CheckBox29 />
           <MillingMachine18
             src={MillingMachine18Image}
             loading="lazy"

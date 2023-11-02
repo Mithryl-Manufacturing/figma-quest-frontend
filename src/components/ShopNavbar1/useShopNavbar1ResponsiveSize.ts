@@ -18,7 +18,7 @@ const useShopNavbar1ResponsiveSize = () => {
   );
 
   React.useEffect(() => {
-    const handlerScreenMobileTypeQuest = (e) =>
+    const handlerScreenMobileTypeQuest = (e: any) =>
       setVariant((size: string) =>
         e.matches ? 'ScreenMobileTypeQuest' : size
       );
@@ -31,7 +31,7 @@ const useShopNavbar1ResponsiveSize = () => {
       handlerScreenMobileTypeQuest
     );
 
-    const handlerScreenTabletTypeQuest = (e) =>
+    const handlerScreenTabletTypeQuest = (e: any) =>
       setVariant((size: string) =>
         e.matches ? 'ScreenTabletTypeQuest' : size
       );
@@ -46,7 +46,7 @@ const useShopNavbar1ResponsiveSize = () => {
       handlerScreenTabletTypeQuest
     );
 
-    const handlerScreenDesktopTypeQuest = (e) =>
+    const handlerScreenDesktopTypeQuest = (e: any) =>
       setVariant((size: string) =>
         e.matches ? 'ScreenDesktopTypeQuest' : size
       );

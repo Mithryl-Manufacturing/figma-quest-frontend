@@ -16,7 +16,7 @@ const useShoppingFooter1ResponsiveSize = () => {
   const [variant, setVariant] = React.useState<string>('Property1desktop');
 
   React.useEffect(() => {
-    const handlerProperty1Mobile = (e) =>
+    const handlerProperty1Mobile = (e: any) =>
       setVariant((size: string) => (e.matches ? 'Property1Mobile' : size));
     const Property1MobileSize = window.matchMedia('(max-width: 572px)');
     setVariant((size: string) =>
@@ -24,7 +24,7 @@ const useShoppingFooter1ResponsiveSize = () => {
     );
     Property1MobileSize.addEventListener('change', handlerProperty1Mobile);
 
-    const handlerProperty1Tablet = (e) =>
+    const handlerProperty1Tablet = (e: any) =>
       setVariant((size: string) => (e.matches ? 'Property1Tablet' : size));
     const Property1TabletSize = window.matchMedia(
       '(min-width: 572px) and (max-width: 1104px)'
@@ -34,7 +34,7 @@ const useShoppingFooter1ResponsiveSize = () => {
     );
     Property1TabletSize.addEventListener('change', handlerProperty1Tablet);
 
-    const handlerProperty1desktop = (e) =>
+    const handlerProperty1desktop = (e: any) =>
       setVariant((size: string) => (e.matches ? 'Property1desktop' : size));
     const Property1desktopSize = window.matchMedia('(min-width: 1104px)');
     setVariant((size: string) =>

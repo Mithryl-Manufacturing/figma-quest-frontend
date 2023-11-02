@@ -14,7 +14,6 @@
 
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import Frame37 from 'src/components/Frame37/Frame37';
 import SideBarLogin from 'src/components/SideBarLogin/SideBarLogin';
 import { Desktop1Props } from 'src/types';
 
@@ -34,14 +33,6 @@ const Desktop11: any = styled('div')({
   overflow: `hidden`,
 });
 
-const Frame371: any = styled(Frame37)(({ theme }: any) => ({
-  width: `825px`,
-  height: `700px`,
-  position: `absolute`,
-  left: `369px`,
-  top: `162px`,
-}));
-
 const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
   width: `125px`,
   height: `1024px`,
@@ -53,7 +44,6 @@ const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
 function Desktop1(props: Desktop1Props): JSX.Element {
   return (
     <Desktop11 className={props.className}>
-      <Frame371 />
       <SideBarLogin1 />
     </Desktop11>
   );
