@@ -13,6 +13,11 @@
  *
  **********************************************************************/
 
+export interface DemoCardProps {
+  className?: any;
+  metadata: any;
+}
+
 export interface Authentication1Props {
   className?: any;
 }
@@ -73,11 +78,6 @@ export interface ShopBtn1Props {
 export interface RuntimeEx1Props {
   className?: any;
   prop1: any;
-}
-
-export interface DemoCardProps {
-  className?: any;
-  metadata: any;
 }
 
 export interface SideBarProps {

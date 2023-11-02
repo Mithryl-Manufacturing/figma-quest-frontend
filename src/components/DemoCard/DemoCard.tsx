@@ -14,7 +14,6 @@
 
 import React from 'react';
 import { Tooltip, Button } from '@mui/material';
-import { Helmet } from 'react-helmet-async';
 import StarImage from 'src/assets/images/Card7_star.png';
 import { styled } from '@mui/material/styles';
 import Image1Image from 'src/assets/images/Card7_Image.png';
@@ -299,9 +298,6 @@ function DemoCard(props: DemoCardProps): JSX.Element {
 
   return (
     <TypeQuest className={props.className}>
-      <Helmet>
-        <title>Demo Card</title>
-      </Helmet>
       <Tooltip
         arrow={true}
         placement={'top'}
