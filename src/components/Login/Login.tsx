@@ -13,10 +13,9 @@
  **********************************************************************/
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import DashboardLoginImage from 'src/assets/images/Login_Dashboard_Login.jpg';
 import { styled } from '@mui/material/styles';
 import SideBarLogin from 'src/components/SideBarLogin/SideBarLogin';
+import Authentication1 from 'src/components/Authentication1/Authentication1';
 import { LoginProps } from 'src/types';
 
 const Login1: any = styled('div')({
@@ -35,14 +34,6 @@ const Login1: any = styled('div')({
   overflow: `hidden`,
 });
 
-const DashboardLogin: any = styled('img')({
-  height: `631px`,
-  width: `545px`,
-  position: `absolute`,
-  left: `447px`,
-  top: `197px`,
-});
-
 const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
   width: `125px`,
   height: `1024px`,
@@ -51,18 +42,19 @@ const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
   top: `0px`,
 }));
 
+const Authentication11: any = styled(Authentication1)(({ theme }: any) => ({
+  width: `622px`,
+  height: `733px`,
+  position: `absolute`,
+  left: `428px`,
+  top: `193px`,
+}));
+
 function Login(props: LoginProps): JSX.Element {
   return (
     <Login1 className={props.className}>
-      <Helmet>
-        <title>Login</title>
-      </Helmet>
-      <DashboardLogin
-        src={DashboardLoginImage}
-        loading="lazy"
-        alt={'Dashboard Login'}
-      />
       <SideBarLogin1 />
+      <Authentication11 />
     </Login1>
   );
 }

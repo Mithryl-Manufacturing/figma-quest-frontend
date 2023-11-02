@@ -13,6 +13,10 @@
  *
  **********************************************************************/
 
+export interface LoginProps {
+  className?: any;
+}
+
 export interface Desktop1Props {
   className?: any;
 }
@@ -81,10 +85,6 @@ export interface ExportProps {
 }
 
 export interface UserControlSettingsProps {
-  className?: any;
-}
-
-export interface LoginProps {
   className?: any;
 }
 
