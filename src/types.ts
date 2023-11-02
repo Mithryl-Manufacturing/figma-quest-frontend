@@ -13,6 +13,10 @@
  *
  **********************************************************************/
 
+export interface DashboardMainProps {
+  className?: any;
+};
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
