@@ -13,133 +13,32 @@
  **********************************************************************/
 
 import React from 'react';
-import MillingMachine2Image from 'src/assets/images/Dashboard_milling_machine_2.png';
-import PressMachine96889431Image from 'src/assets/images/Dashboard_press_machine_9688943_1.png';
 import MillingMachine1Image from 'src/assets/images/Dashboard_milling_machine_1.png';
+import MillingMachine11Image from 'src/assets/images/Dashboard_milling_machine_1_1.png';
+import MillingMachine12Image from 'src/assets/images/Dashboard_milling_machine_1_2.png';
+import MillingMachine13Image from 'src/assets/images/Dashboard_milling_machine_1_3.png';
+import MillingMachine14Image from 'src/assets/images/Dashboard_milling_machine_1_4.png';
+import MillingMachine15Image from 'src/assets/images/Dashboard_milling_machine_1_5.png';
+import MillingMachine16Image from 'src/assets/images/Dashboard_milling_machine_1_6.png';
+import MillingMachine17Image from 'src/assets/images/Dashboard_milling_machine_1_7.png';
+import MillingMachine18Image from 'src/assets/images/Dashboard_milling_machine_1_8.png';
 import { styled } from '@mui/material/styles';
+import CheckBox2 from 'src/components/CheckBox2/CheckBox2';
 import { DashboardProps } from 'src/types';
 
 const Dashboard1: any = styled('div')({
-  backgroundColor: `rgba(217, 217, 217, 1)`,
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `row`,
   width: '100%',
-  height: `685px`,
+  height: `550px`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
   overflow: `hidden`,
-});
-
-const AssetType: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `79px`,
-  height: `105px`,
-  position: `absolute`,
-  left: `110px`,
-  top: `0px`,
-});
-
-const MachineIdDescription: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `221px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `266px`,
-  top: `31px`,
-});
-
-const ProgramNumber: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `83px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `564px`,
-  top: `31px`,
-});
-
-const MachineStatus: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `131px`,
-  height: `101px`,
-  position: `absolute`,
-  left: `718px`,
-  top: `2px`,
-});
-
-const DataCapture: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `81px`,
-  height: `77px`,
-  position: `absolute`,
-  left: `912px`,
-  top: `14px`,
-});
-
-const Rectangle1: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  border: `1px solid rgba(0, 0, 0, 1)`,
-  boxSizing: `border-box`,
-  borderRadius: `3px`,
-  width: `15px`,
-  height: `15px`,
-  position: `absolute`,
-  left: `47px`,
-  top: `48px`,
 });
 
 const MachineData: any = styled('div')({
@@ -153,38 +52,42 @@ const MachineData: any = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `1048px`,
-  height: `550px`,
-  left: `18px`,
-  top: `118px`,
+  width: `1091px`,
+  height: `1055px`,
+  left: `0px`,
+  top: `0px`,
   overflow: `hidden`,
 });
 
-const Line4: any = styled('div')({
-  border: `1px solid rgba(157, 157, 157, 1)`,
-  width: `1000px`,
-  height: `0px`,
+const Frame3: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
-  left: `20px`,
-  top: `100px`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `0px`,
+  overflow: `hidden`,
 });
 
-const MillingMachine2: any = styled('img')({
+const CheckBox21: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine1: any = styled('img')({
   height: `50px`,
   width: `50px`,
   objectFit: `cover`,
-  position: `absolute`,
-  left: `107px`,
-  top: `136px`,
-});
-
-const PressMachine96889431: any = styled('img')({
-  height: `50px`,
-  width: `50px`,
-  objectFit: `cover`,
-  position: `absolute`,
-  left: `107px`,
-  top: `249px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Cnc1HermleC52UMtSpan1: any = styled('span')({
@@ -225,9 +128,7 @@ const Cnc1HermleC52UMt: any = styled('div')({
   textTransform: `none`,
   width: `251px`,
   height: `49px`,
-  position: `absolute`,
-  left: `224px`,
-  top: `28px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Q659711: any = styled('div')({
@@ -244,9 +145,24 @@ const Q659711: any = styled('div')({
   textTransform: `none`,
   width: `83px`,
   height: `49px`,
-  position: `absolute`,
-  left: `546px`,
-  top: `28px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q000000: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(243, 84, 84, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Automated: any = styled('div')({
@@ -262,10 +178,114 @@ const Automated: any = styled('div')({
   textDecoration: `none`,
   textTransform: `none`,
   width: `115px`,
-  height: `77px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame31: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
-  left: `875px`,
-  top: `11px`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `130px`,
+  overflow: `hidden`,
+});
+
+const CheckBox22: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine11: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Cnc2HermleC42UMtSpan1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc2HermleC42UMtSpan2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc2HermleC42UMt: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q645831: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q0000001: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(246, 167, 49, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Automated1: any = styled('div')({
@@ -281,10 +301,114 @@ const Automated1: any = styled('div')({
   textDecoration: `none`,
   textTransform: `none`,
   width: `115px`,
-  height: `77px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame32: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
-  left: `875px`,
-  top: `123px`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `260px`,
+  overflow: `hidden`,
+});
+
+const CheckBox23: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine12: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Cnc3GrobG550Span1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc3GrobG550Span2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc3GrobG550: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q655541: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q021500: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(28, 155, 7, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Automated2: any = styled('div')({
@@ -300,226 +424,712 @@ const Automated2: any = styled('div')({
   textDecoration: `none`,
   textTransform: `none`,
   width: `115px`,
-  height: `77px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame33: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
-  left: `875px`,
-  top: `230px`,
-});
-
-const Cnc2DoosanPuma2600Span1: any = styled('span')({
-  whiteSpace: `pre-wrap`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `700`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-});
-
-const Cnc2DoosanPuma2600Span2: any = styled('span')({
-  whiteSpace: `pre-wrap`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-});
-
-const Cnc2DoosanPuma2600: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: 'unset',
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `251px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `224px`,
-  top: `143px`,
-});
-
-const Q659851: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `83px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `546px`,
-  top: `143px`,
-});
-
-const Q021105: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(234, 142, 115, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `131px`,
-  height: `101px`,
-  position: `absolute`,
-  left: `700px`,
-  top: `114px`,
-});
-
-const Press1Wickert5000PsSpan1: any = styled('span')({
-  whiteSpace: `pre-wrap`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `700`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-});
-
-const Press1Wickert5000PsSpan2: any = styled('span')({
-  whiteSpace: `pre-wrap`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-});
-
-const Press1Wickert5000Ps: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: 'unset',
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `251px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `224px`,
-  top: `246px`,
-});
-
-const Q659961: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `83px`,
-  height: `49px`,
-  position: `absolute`,
-  left: `546px`,
-  top: `246px`,
-});
-
-const Q000000: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(255, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `131px`,
-  height: `101px`,
-  position: `absolute`,
-  left: `700px`,
-  top: `217px`,
-});
-
-const Rectangle3: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  border: `1px solid rgba(0, 0, 0, 1)`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
   boxSizing: `border-box`,
-  borderRadius: `3px`,
-  width: `15px`,
-  height: `15px`,
-  position: `absolute`,
-  left: `29px`,
-  top: `42px`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `390px`,
+  overflow: `hidden`,
 });
 
-const Rectangle4: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  border: `1px solid rgba(0, 0, 0, 1)`,
-  boxSizing: `border-box`,
-  borderRadius: `3px`,
-  width: `15px`,
-  height: `15px`,
-  position: `absolute`,
-  left: `29px`,
-  top: `154px`,
-});
+const CheckBox24: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
 
-const Rectangle5: any = styled('div')({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  border: `1px solid rgba(0, 0, 0, 1)`,
-  boxSizing: `border-box`,
-  borderRadius: `3px`,
-  width: `15px`,
-  height: `15px`,
-  position: `absolute`,
-  left: `29px`,
-  top: `266px`,
-});
-
-const MillingMachine1: any = styled('img')({
+const MillingMachine13: any = styled('img')({
   height: `50px`,
   width: `50px`,
   objectFit: `cover`,
-  position: `absolute`,
-  left: `107px`,
-  top: `24px`,
+  margin: `0px 0px 0px 59px`,
 });
 
-const Line3: any = styled('div')({
-  border: `1px solid rgba(157, 157, 157, 1)`,
-  width: `1000px`,
-  height: `0px`,
+const Cmm1ZiessPrismoSpan1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cmm1ZiessPrismoSpan2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cmm1ZiessPrismo: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q666851: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q002500: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(28, 155, 7, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated3: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame34: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
-  left: `20px`,
-  top: `215px`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `520px`,
+  overflow: `hidden`,
+});
+
+const CheckBox25: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine14: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Cmm2ZiessPrismoSpan1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cmm2ZiessPrismoSpan2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cmm2ZiessPrismo: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q6597111: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q001000: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(28, 155, 7, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated4: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame35: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `absolute`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `650px`,
+  overflow: `hidden`,
+});
+
+const CheckBox26: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine15: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Press1WickertWkp5000Span1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press1WickertWkp5000Span2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press1WickertWkp5000: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q6597112: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q0000002: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(243, 84, 84, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated5: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame36: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `absolute`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `780px`,
+  overflow: `hidden`,
+});
+
+const CheckBox27: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine16: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Press2WickertWkp4400Span1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press2WickertWkp4400Span2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press2WickertWkp4400: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q623581: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q000500: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(28, 155, 7, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated6: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame37: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `absolute`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `910px`,
+  overflow: `hidden`,
+});
+
+const CheckBox28: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine17: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Press3WickertWkp4400Span1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press3WickertWkp4400Span2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Press3WickertWkp4400: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q645871: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q012500: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(28, 155, 7, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `131px`,
+  height: `101px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated7: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Frame38: any = styled('div')({
+  backgroundColor: `rgba(217, 217, 217, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `absolute`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px 33px`,
+  boxSizing: `border-box`,
+  width: `1091px`,
+  height: `120px`,
+  left: `0px`,
+  top: `1040px`,
+  overflow: `hidden`,
+});
+
+const CheckBox29: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `50px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
+const MillingMachine18: any = styled('img')({
+  height: `50px`,
+  width: `50px`,
+  objectFit: `cover`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Cnc1HermleC52UMt1Span1: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `700`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc1HermleC52UMt1Span2: any = styled('span')({
+  whiteSpace: `pre-wrap`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+});
+
+const Cnc1HermleC52UMt1: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: 'unset',
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `251px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Q6597113: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `83px`,
+  height: `49px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 const Q040333: any = styled('div')({
@@ -536,62 +1146,165 @@ const Q040333: any = styled('div')({
   textTransform: `none`,
   width: `131px`,
   height: `101px`,
-  position: `absolute`,
-  left: `700px`,
-  top: `-1px`,
+  margin: `0px 0px 0px 59px`,
+});
+
+const Automated8: any = styled('div')({
+  textAlign: `center`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(0, 0, 0, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Roboto`,
+  fontWeight: `400`,
+  fontSize: `20px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  width: `115px`,
+  height: `88px`,
+  margin: `0px 0px 0px 59px`,
 });
 
 function Dashboard(props: DashboardProps): JSX.Element {
   return (
     <Dashboard1 className={props.className}>
-      <AssetType>{`Asset Type`}</AssetType>
-      <MachineIdDescription>{`Machine ID & Description`}</MachineIdDescription>
-      <ProgramNumber>{`Program Number`}</ProgramNumber>
-      <MachineStatus>{`Machine Status`}</MachineStatus>
-      <DataCapture>{`Data Capture`}</DataCapture>
-      <Rectangle1></Rectangle1>
       <MachineData>
-        <Line4></Line4>
-        <MillingMachine2
-          src={MillingMachine2Image}
-          loading="lazy"
-          alt={'milling-machine 2'}
-        />
-        <PressMachine96889431
-          src={PressMachine96889431Image}
-          loading="lazy"
-          alt={'press-machine_9688943 1'}
-        />
-        <Cnc1HermleC52UMt>
-          <Cnc1HermleC52UMtSpan1>{`CNC 1`}</Cnc1HermleC52UMtSpan1>
-          <Cnc1HermleC52UMtSpan2>{`: Hermle C52 U MT`}</Cnc1HermleC52UMtSpan2>
-        </Cnc1HermleC52UMt>
-        <Q659711>{`65971/1`}</Q659711>
-        <Automated>{`Automated`}</Automated>
-        <Automated1>{`Automated`}</Automated1>
-        <Automated2>{`Automated`}</Automated2>
-        <Cnc2DoosanPuma2600>
-          <Cnc2DoosanPuma2600Span1>{`CNC 2`}</Cnc2DoosanPuma2600Span1>
-          <Cnc2DoosanPuma2600Span2>{`: Doosan PUMA 2600`}</Cnc2DoosanPuma2600Span2>
-        </Cnc2DoosanPuma2600>
-        <Q659851>{`65985/1`}</Q659851>
-        <Q021105>{`02 : 11 : 05`}</Q021105>
-        <Press1Wickert5000Ps>
-          <Press1Wickert5000PsSpan1>{`PRESS 1`}</Press1Wickert5000PsSpan1>
-          <Press1Wickert5000PsSpan2>{`: WICKERT 5000PS`}</Press1Wickert5000PsSpan2>
-        </Press1Wickert5000Ps>
-        <Q659961>{`65996/1`}</Q659961>
-        <Q000000>{`00 : 00 : 00`}</Q000000>
-        <Rectangle3></Rectangle3>
-        <Rectangle4></Rectangle4>
-        <Rectangle5></Rectangle5>
-        <MillingMachine1
-          src={MillingMachine1Image}
-          loading="lazy"
-          alt={'milling-machine 1'}
-        />
-        <Line3></Line3>
-        <Q040333>{`04 : 03 : 33`}</Q040333>
+        <Frame3>
+          <CheckBox21 />
+          <MillingMachine1
+            src={MillingMachine1Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cnc1HermleC52UMt>
+            <Cnc1HermleC52UMtSpan1>{`CNC 1`}</Cnc1HermleC52UMtSpan1>
+            <Cnc1HermleC52UMtSpan2>{`: Hermle C52 U MT`}</Cnc1HermleC52UMtSpan2>
+          </Cnc1HermleC52UMt>
+          <Q659711>{`65971/1`}</Q659711>
+          <Q000000>{`00 : 00 : 00`}</Q000000>
+          <Automated>{`Automated`}</Automated>
+        </Frame3>
+        <Frame31>
+          <CheckBox22 />
+          <MillingMachine11
+            src={MillingMachine11Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cnc2HermleC42UMt>
+            <Cnc2HermleC42UMtSpan1>{`CNC 2`}</Cnc2HermleC42UMtSpan1>
+            <Cnc2HermleC42UMtSpan2>{`: Hermle C42 U MT`}</Cnc2HermleC42UMtSpan2>
+          </Cnc2HermleC42UMt>
+          <Q645831>{`64583/1`}</Q645831>
+          <Q0000001>{`00 : 00 : 00`}</Q0000001>
+          <Automated1>{`Automated`}</Automated1>
+        </Frame31>
+        <Frame32>
+          <CheckBox23 />
+          <MillingMachine12
+            src={MillingMachine12Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cnc3GrobG550>
+            <Cnc3GrobG550Span1>{`CNC 3`}</Cnc3GrobG550Span1>
+            <Cnc3GrobG550Span2>{`: Grob G550`}</Cnc3GrobG550Span2>
+          </Cnc3GrobG550>
+          <Q655541>{`65554/1`}</Q655541>
+          <Q021500>{`02 : 15 : 00`}</Q021500>
+          <Automated2>{`Automated`}</Automated2>
+        </Frame32>
+        <Frame33>
+          <CheckBox24 />
+          <MillingMachine13
+            src={MillingMachine13Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cmm1ZiessPrismo>
+            <Cmm1ZiessPrismoSpan1>{`CMM 1`}</Cmm1ZiessPrismoSpan1>
+            <Cmm1ZiessPrismoSpan2>{`: ZIESS Prismo`}</Cmm1ZiessPrismoSpan2>
+          </Cmm1ZiessPrismo>
+          <Q666851>{`66685/1`}</Q666851>
+          <Q002500>{`00 : 25 : 00`}</Q002500>
+          <Automated3>{`Automated`}</Automated3>
+        </Frame33>
+        <Frame34>
+          <CheckBox25 />
+          <MillingMachine14
+            src={MillingMachine14Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cmm2ZiessPrismo>
+            <Cmm2ZiessPrismoSpan1>{`CMM 2`}</Cmm2ZiessPrismoSpan1>
+            <Cmm2ZiessPrismoSpan2>{`: ZIESS Prismo`}</Cmm2ZiessPrismoSpan2>
+          </Cmm2ZiessPrismo>
+          <Q6597111>{`65971/1`}</Q6597111>
+          <Q001000>{`00 : 10 : 00`}</Q001000>
+          <Automated4>{`Automated`}</Automated4>
+        </Frame34>
+        <Frame35>
+          <CheckBox26 />
+          <MillingMachine15
+            src={MillingMachine15Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Press1WickertWkp5000>
+            <Press1WickertWkp5000Span1>{`Press 1`}</Press1WickertWkp5000Span1>
+            <Press1WickertWkp5000Span2>{`: Wickert WKP5000s`}</Press1WickertWkp5000Span2>
+          </Press1WickertWkp5000>
+          <Q6597112>{`65971/1`}</Q6597112>
+          <Q0000002>{`00 : 00 : 00 `}</Q0000002>
+          <Automated5>{`Automated`}</Automated5>
+        </Frame35>
+        <Frame36>
+          <CheckBox27 />
+          <MillingMachine16
+            src={MillingMachine16Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Press2WickertWkp4400>
+            <Press2WickertWkp4400Span1>{`Press 2`}</Press2WickertWkp4400Span1>
+            <Press2WickertWkp4400Span2>{`: Wickert WKP4400S`}</Press2WickertWkp4400Span2>
+          </Press2WickertWkp4400>
+          <Q623581>{`62358/1`}</Q623581>
+          <Q000500>{`00 : 05 : 00`}</Q000500>
+          <Automated6>{`Automated`}</Automated6>
+        </Frame36>
+        <Frame37>
+          <CheckBox28 />
+          <MillingMachine17
+            src={MillingMachine17Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Press3WickertWkp4400>
+            <Press3WickertWkp4400Span1>{`Press 3`}</Press3WickertWkp4400Span1>
+            <Press3WickertWkp4400Span2>{`: Wickert WKP4400S`}</Press3WickertWkp4400Span2>
+          </Press3WickertWkp4400>
+          <Q645871>{`64587/1`}</Q645871>
+          <Q012500>{`01 : 25 : 00`}</Q012500>
+          <Automated7>{`Automated`}</Automated7>
+        </Frame37>
+        <Frame38>
+          <CheckBox29 />
+          <MillingMachine18
+            src={MillingMachine18Image}
+            loading="lazy"
+            alt={'milling-machine 1'}
+          />
+          <Cnc1HermleC52UMt1>
+            <Cnc1HermleC52UMt1Span1>{`CNC 1`}</Cnc1HermleC52UMt1Span1>
+            <Cnc1HermleC52UMt1Span2>{`: Hermle C52 U MT`}</Cnc1HermleC52UMt1Span2>
+          </Cnc1HermleC52UMt1>
+          <Q6597113>{`65971/1`}</Q6597113>
+          <Q040333>{`04 : 03 : 33`}</Q040333>
+          <Automated8>{`Automated`}</Automated8>
+        </Frame38>
       </MachineData>
     </Dashboard1>
   );
