@@ -13,6 +13,10 @@
  *
  **********************************************************************/
 
+export interface Desktop1Props {
+  className?: any;
+}
+
 export interface DashboardProps {
   className?: any;
 }
@@ -62,10 +66,6 @@ export interface RuntimeEx1Props {
 export interface DemoCardProps {
   className?: any;
   metadata: any;
-}
-
-export interface Desktop1Props {
-  className?: any;
 }
 
 export interface SideBarProps {

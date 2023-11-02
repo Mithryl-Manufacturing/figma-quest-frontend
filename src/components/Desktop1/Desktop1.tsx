@@ -13,16 +13,12 @@
  **********************************************************************/
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { styled } from '@mui/material/styles';
-import SideBar from 'src/components/SideBar/SideBar';
-import SearchBar from 'src/components/SearchBar/SearchBar';
-import Export from 'src/components/Export/Export';
-import UserControlSettings from 'src/components/UserControlSettings/UserControlSettings';
-import Dashboard from 'src/components/Dashboard/Dashboard';
+import Frame37 from 'src/components/Frame37/Frame37';
+import SideBarLogin from 'src/components/SideBarLogin/SideBarLogin';
 import { Desktop1Props } from 'src/types';
 
-const DashboardMain: any = styled('div')({
+const Desktop11: any = styled('div')({
   backgroundColor: `rgba(255, 255, 255, 1)`,
   borderRadius: `0px`,
   display: `flex`,
@@ -38,223 +34,28 @@ const DashboardMain: any = styled('div')({
   overflow: `hidden`,
 });
 
-const SideBar1: any = styled(SideBar)(({ theme }: any) => ({
-  width: `225px`,
+const Frame371: any = styled(Frame37)(({ theme }: any) => ({
+  width: `825px`,
+  height: `700px`,
+  position: `absolute`,
+  left: `369px`,
+  top: `162px`,
+}));
+
+const SideBarLogin1: any = styled(SideBarLogin)(({ theme }: any) => ({
+  width: `125px`,
   height: `1024px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
 }));
 
-const SearchBar1: any = styled(SearchBar)(({ theme }: any) => ({
-  width: `903px`,
-  height: `40px`,
-  position: `absolute`,
-  left: `280px`,
-  top: `25px`,
-}));
-
-const Export1: any = styled(Export)(({ theme }: any) => ({
-  width: `278px`,
-  height: `43px`,
-  position: `absolute`,
-  left: `280px`,
-  top: `888px`,
-}));
-
-const UserControlSettings1: any = styled(UserControlSettings)(
-  ({ theme }: any) => ({
-    width: `99px`,
-    height: `45px`,
-    position: `absolute`,
-    left: `1273px`,
-    top: `25px`,
-  })
-);
-
-const Dashboard1: any = styled('div')({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `40px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  position: `absolute`,
-  left: `280px`,
-  top: `110px`,
-});
-
-const Frame9: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `absolute`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `center`,
-  alignItems: `center`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `1091px`,
-  left: `280px`,
-  top: `200px`,
-  overflow: `hidden`,
-});
-
-const RadioWrapper: any = styled('div')({
-  borderRadius: `8px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `center`,
-  alignItems: `center`,
-  padding: `8px`,
-  boxSizing: `border-box`,
-  width: `51px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Label: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(97, 97, 97, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Jost`,
-  fontWeight: `400`,
-  fontSize: `16px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  lineHeight: `150%`,
-  textTransform: `none`,
-  flex: `1`,
-  margin: `0px 0px 0px 8px`,
-}));
-
-const AssetType: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `79px`,
-  height: `105px`,
-  margin: `0px 0px 0px 70px`,
-});
-
-const MachineIdDescription: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `221px`,
-  height: `49px`,
-  margin: `0px 0px 0px 70px`,
-});
-
-const ProgramNumber: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `83px`,
-  height: `49px`,
-  margin: `0px 0px 0px 70px`,
-});
-
-const MachineStatus: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `131px`,
-  height: `101px`,
-  margin: `0px 0px 0px 70px`,
-});
-
-const DataCapture: any = styled('div')({
-  textAlign: `center`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  textTransform: `none`,
-  width: `81px`,
-  height: `77px`,
-  margin: `0px 0px 0px 70px`,
-});
-
-const Dashboard2: any = styled(Dashboard)(({ theme }: any) => ({
-  width: `1091px`,
-  height: `552px`,
-  position: `absolute`,
-  left: `280px`,
-  top: `305px`,
-}));
-
 function Desktop1(props: Desktop1Props): JSX.Element {
   return (
-    <DashboardMain className={props.className}>
-      <Helmet>
-        <title>Desktop1</title>
-      </Helmet>
-      <SideBar1 />
-      <SearchBar1 />
-      <Export1 />
-      <UserControlSettings1 />
-      <Dashboard1>{`Dashboard`}</Dashboard1>
-      <Frame9>
-        <RadioWrapper>
-          {false && <Label>{`Label`}</Label>}
-        </RadioWrapper>
-        <AssetType>{`Asset Type`}</AssetType>
-        <MachineIdDescription>
-          {`Machine ID & Description`}
-        </MachineIdDescription>
-        <ProgramNumber>{`Program Number`}</ProgramNumber>
-        <MachineStatus>{`Machine Status`}</MachineStatus>
-        <DataCapture>{`Data Capture`}</DataCapture>
-      </Frame9>
-      <Dashboard2 />
-    </DashboardMain>
+    <Desktop11 className={props.className}>
+      <Frame371 />
+      <SideBarLogin1 />
+    </Desktop11>
   );
 }
 
