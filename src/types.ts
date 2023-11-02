@@ -13,10 +13,6 @@
  *
  **********************************************************************/
 
-export interface DashboardMainProps {
-  className?: any;
-};
-
 export interface SampleCardProps {
   className?: any;
   metadata: any;
@@ -95,3 +91,19 @@ export interface LoginProps {
 export interface SideBarLoginProps {
   className?: any;
 }
+
+export interface Login1Props {
+  className?: any;
+}
+
+export interface Dashboard1Props {
+  className?: any;
+}
+
+export interface DashboardCardsProps {
+  className?: any;
+}
+
+export interface DashboardMainProps {
+  className?: any;
+};
