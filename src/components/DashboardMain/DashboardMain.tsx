@@ -19,6 +19,7 @@ import UserControlSettingsImage from 'src/assets/images/DashboardMain_User_Contr
 import DashboardImage from 'src/assets/images/DashboardMain_Dashboard.png';
 import SearchImage from 'src/assets/images/DashboardMain____Search.png';
 import { styled } from '@mui/material/styles';
+import CheckBox2 from 'src/components/CheckBox2/CheckBox2';
 import { DashboardMainProps } from 'src/types';
 
 const DashboardMain1: any = styled('div')({
@@ -94,6 +95,12 @@ const Frame9: any = styled('div')({
   overflow: `hidden`,
 });
 
+const CheckBox21: any = styled(CheckBox2)(({ theme }: any) => ({
+  width: `52px`,
+  height: `50px`,
+  margin: `0px`,
+}));
+
 const AssetType: any = styled('div')({
   textAlign: `center`,
   whiteSpace: `pre-wrap`,
@@ -108,7 +115,7 @@ const AssetType: any = styled('div')({
   textTransform: `none`,
   width: `79px`,
   height: `105px`,
-  margin: `0px`,
+  margin: `0px 0px 0px 65px`,
 });
 
 const MachineIdDescription: any = styled('div')({
@@ -207,6 +214,7 @@ function DashboardMain(props: DashboardMainProps): JSX.Element {
       />
       <Overview>{`Overview`}</Overview>
       <Frame9>
+        <CheckBox21 />
         <AssetType>{`Asset Type`}</AssetType>
         <MachineIdDescription>
           {`Machine ID & Description`}

@@ -19,6 +19,7 @@ import SideBar from 'src/components/SideBar/SideBar';
 import SearchBar from 'src/components/SearchBar/SearchBar';
 import Export from 'src/components/Export/Export';
 import UserControlSettings from 'src/components/UserControlSettings/UserControlSettings';
+import BasesCheckbox from 'src/components/BasesCheckbox/BasesCheckbox';
 import Dashboard from 'src/components/Dashboard/Dashboard';
 import { Desktop1Props } from 'src/types';
 
@@ -119,6 +120,12 @@ const RadioWrapper: any = styled('div')({
   margin: `0px`,
   overflow: `hidden`,
 });
+
+const BasesCheckbox1: any = styled(BasesCheckbox)(({ theme }: any) => ({
+  width: `24px`,
+  height: `24px`,
+  margin: `0px`,
+}));
 
 const Label: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
@@ -243,6 +250,7 @@ function Desktop1(props: Desktop1Props): JSX.Element {
       <Dashboard1>{`Dashboard`}</Dashboard1>
       <Frame9>
         <RadioWrapper>
+          <BasesCheckbox1 />
           {false && <Label>{`Label`}</Label>}
         </RadioWrapper>
         <AssetType>{`Asset Type`}</AssetType>
