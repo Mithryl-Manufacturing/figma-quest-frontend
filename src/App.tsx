@@ -5,6 +5,7 @@ import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from 'src/QuestUiKitLightTheme';
 import SampleCardGrid from 'src/components/SampleCardGrid/SampleCardGrid';
 import Desktop1 from 'src/components/Desktop1/Desktop1';
+import DashboardMain from 'src/components/DashboardMain/DashboardMain';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<SampleCardGrid />} />
             <Route path="Desktop1" element={<Desktop1 />} />
+            <Route path="dashboard" element={<DashboardMain />} />
           </Routes>
         </ThemeProvider>
       </StyledEngineProvider>
